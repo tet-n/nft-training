@@ -257,11 +257,11 @@ summary {
   src: url("../fonts/dm-sans-v11-latin-700.eot"); /* IE9 Compat Modes */
   src: local(""), url("../fonts/dm-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans-v11-latin-700.woff2") format("woff2"), url("../fonts/dm-sans-v11-latin-700.woff") format("woff"), url("../fonts/dm-sans-v11-latin-700.ttf") format("truetype"), url("../fonts/dm-sans-v11-latin-700.svg#DMSans") format("svg"); /* Legacy iOS */
 }
-.site-nav__list {
+.hero__list, .site-nav__list {
   list-style: none;
 }
 
-.site-nav__link {
+.hero__link, .site-nav__link {
   text-decoration: none;
 }
 
@@ -324,4 +324,11 @@ body {
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: #118DA8;
+}
+
+.hero__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
-  <!-- header -->
-  <header class="header container header__container">
-    <a href="./index.html" class="header__logo header__logo--margin">
-      <svg class="" width="159.15" height="32.62">
-        <use href="./images/icons.svg#logo"></use>
-      </svg>
-    </a>
-    <!-- navigation -->
-    <nav class="site-nav">
-      <ul class="site-nav__list">
-        <li class="site-nav__item"><a href="" class="site-nav__link">Home</a></li>
-        <li class="site-nav__item"><a href="" class="site-nav__link">Episodes</a></li>
-        <li class="site-nav__item"><a href="" class="site-nav__link">About</a></li>
-        <li class="site-nav__item"><a href="" class="site-nav__link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header container header__container">
+      <a href="./index.html" class="header__logo header__logo--margin">
+        <svg class="" width="159.15" height="32.62">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+      </a>
+      <!-- navigation -->
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a href="" class="site-nav__link">Home</a></li>
+          <li class="site-nav__item"><a href="" class="site-nav__link">Episodes</a></li>
+          <li class="site-nav__item"><a href="" class="site-nav__link">About</a></li>
+          <li class="site-nav__item"><a href="" class="site-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero container hero__container">
+        <picture class="hero__img">
+          <source srcset="./images/hero/hero-1x.webp 1x, ./images/hero/hero-2x.webp 2x" type="image/webp">
+          <source srcset="./images/hero/hero-1x.jpg 1x, ./images/hero/hero-2x.jpg 2x">
+          <img src="./images/hero/hero-1x.jpg" alt="A man works for a radio station" width="650" height="873"/>
+        </picture>
+        <div class="hero__wrap">
+          <h1 class="hero__title">Take your podcast to the next <span>level</span></h1>
+          <p class="hero__text">Listen on</p>
+          <!-- links -->
+          <ul class="hero__list">
+            <li class="hero__item">
+              <a href="hero__icon" class="hero__link"></a
+              ><svg class="" width="32" height="32">
+                <use href="./images/icons.svg#wifi"></use>
+              </svg>
+            </li>
+            <li class="hero__item">
+              <a href="" class="hero__link"></a
+              ><svg class="hero__icon" width="32" height="32">
+                <use href="./images/icons.svg#copy"></use>
+              </svg>
+            </li>
+            <li class="hero__item">
+              <a href="" class="hero__link"></a
+              ><svg class="hero__icon" width="32" height="32">
+                <use href="./images/icons.svg#cloud"></use>
+              </svg>
+            </li>
+            <li class="hero__item">
+              <a href="" class="hero__link"></a
+              ><svg class="hero__icon" width="32" height="32">
+                <use href="./images/icons.svg#info"></use>
+              </svg>
+            </li>
+            <li class="hero__item">
+              <a href="" class="hero__link"></a
+              ><svg class="hero__icon" width="32" height="32">
+                <use href="./images/icons.svg#radio"></use>
+              </svg>
+
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
