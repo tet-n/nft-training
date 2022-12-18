@@ -1,0 +1,12 @@
+// links
+.hero__list {
+  @extend %list;
+display: flex;
+gap: 25px;
+}
+
+.hero__link {
+  @extend %link;
+}
+
+
