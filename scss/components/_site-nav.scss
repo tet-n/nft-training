@@ -1,0 +1,28 @@
+.site-nav {
+
+  color: getColor('primary-text');
+
+  // .site-nav__list
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    @extend %list;
+  }
+
+  // &__item {
+  // }
+
+  &__link {
+    font-size: 17px;
+    line-height: 1.59;
+    @extend %link;
+    color: currentColor;
+    @include transition(color);
+  
+    &:hover,
+    &:focus {
+      color: getColor('primary-accent');
+    }
+  }
+}

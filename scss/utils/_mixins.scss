@@ -1,0 +1,13 @@
+@mixin transition($property1, $property2: false, $property3: false) {
+  transition-property: $property1, $property2, $property3;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  @if $property2 {
+    transition-property: $property1, $property2;
+  }
+
+  @if $property3 {
+    transition-property: $property1, $property2, $property3;
+  }
+}
