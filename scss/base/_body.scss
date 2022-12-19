@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.5;
-  color: getColor('secondary-text');
+  color: getColors('secondary-text');
 
-  background-color:  getColor('background-main');
+  background-color: getColors('background-main');
 }

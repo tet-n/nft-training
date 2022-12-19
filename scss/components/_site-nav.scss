@@ -1,5 +1,5 @@
 .site-nav {
-  color: getColor("primary-text");
+  color: getColors('primary-text');
 
   // .site-nav__list
 
@@ -23,7 +23,7 @@
 
     &:hover,
     &:focus {
-      color: getColor("primary-accent");
+      color: getColors('primary-accent');
     }
   }
 }

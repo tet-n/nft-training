@@ -257,12 +257,27 @@ summary {
   src: url("../fonts/dm-sans-v11-latin-700.eot"); /* IE9 Compat Modes */
   src: local(""), url("../fonts/dm-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans-v11-latin-700.woff2") format("woff2"), url("../fonts/dm-sans-v11-latin-700.woff") format("woff"), url("../fonts/dm-sans-v11-latin-700.ttf") format("truetype"), url("../fonts/dm-sans-v11-latin-700.svg#DMSans") format("svg"); /* Legacy iOS */
 }
-.hero__list, .site-nav__list {
+.episodes__list, .hero__list, .site-nav__list {
   list-style: none;
 }
 
 .hero__link, .site-nav__link {
   text-decoration: none;
+}
+
+.episodes__btn {
+  display: block;
+  padding: 12px 15px 12px 20px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #118da8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 body {
@@ -353,7 +368,7 @@ svg {
           transition-timing-function: var(--timing-function);
 }
 .site-nav__link:hover, .site-nav__link:focus {
-  color: #118DA8;
+  color: #118da8;
 }
 
 .hero__container {
@@ -414,4 +429,38 @@ svg {
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
+}
+
+.episodes {
+  padding-top: 93px;
+  padding-bottom: 160px;
+}
+.episodes__title {
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.24;
+  letter-spacing: 2.88px;
+  color: #fff;
+}
+.episodes__wrap {
+  margin-bottom: 40px;
+  padding: 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.episode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 53px;
+}
+
+.episode__wrap {
+  width: 778px;
 }/*# sourceMappingURL=main.css.map */
