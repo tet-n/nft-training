@@ -1,13 +1,14 @@
-@import './base/normalize';
-@import './base/fonts';
-@import './utils/var';
-@import './utils/placeholders';
-@import './utils/mixins';
+@import "./base/normalize";
+@import "./base/fonts";
+@import "./utils/var";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
-@import './base/body';
-@import './base/container';
-@import './layouts/header';
-@import './components/logo';
-@import './components/site-nav';
-@import './layouts/hero';
-@import './components/links';
+@import "./base/body";
+@import "./base/reset";
+@import "./base/container";
+@import "./layouts/header";
+@import "./components/logo";
+@import "./components/site-nav";
+@import "./layouts/hero";
+@import "./components/links";

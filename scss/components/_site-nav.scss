@@ -1,6 +1,5 @@
 .site-nav {
-
-  color: getColor('primary-text');
+  color: getColor("primary-text");
 
   // .site-nav__list
 
@@ -14,15 +13,17 @@
   // }
 
   &__link {
+    display: block;
+    padding: 46px 0;
     font-size: 17px;
     line-height: 1.59;
     @extend %link;
     color: currentColor;
     @include transition(color);
-  
+
     &:hover,
     &:focus {
-      color: getColor('primary-accent');
+      color: getColor("primary-accent");
     }
   }
 }

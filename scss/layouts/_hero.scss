@@ -1,0 +1,28 @@
+.hero__container {
+  padding-top: 40px;
+  display: flex;
+  gap: 60px;
+}
+
+.hero__img {
+  border-radius: 12px;
+}
+
+.hero__wrap {
+  padding-top: 294px;
+}
+
+.hero__title {
+  width: 526px;
+
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1.26;
+
+  letter-spacing: 3.2px;
+  color: getColor("primary-text");
+
+  &--bold {
+    font-weight: 700;
+  }
+}
