@@ -5,3 +5,21 @@
 %link {
   text-decoration: none;
 }
+
+%btn {
+  display: block;
+  padding: 12px 15px 20px;
+
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: #ffffff;
+  background-color: getColor("primary-accent");
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
