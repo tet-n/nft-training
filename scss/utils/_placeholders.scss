@@ -20,6 +20,5 @@
   background-color: getColors('primary-accent');
   border: none;
   border-radius: 6px;
-
-  cursor: pointer;
+  cursor: url(../images/cursor.svg), auto;
 }

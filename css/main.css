@@ -265,7 +265,7 @@ summary {
   text-decoration: none;
 }
 
-.episodes__btn {
+.episode__btn, .episodes__btn {
   display: block;
   padding: 12px 15px 12px 20px;
   font-family: "DM Sans", sans-serif;
@@ -277,7 +277,7 @@ summary {
   background-color: #118da8;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
+  cursor: url(../images/cursor.svg), auto;
 }
 
 body {
@@ -454,13 +454,62 @@ svg {
           align-items: center;
 }
 
+.episodes__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
 .episode {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 53px;
+  padding: 40px;
+  background-color: #000000;
+  border-radius: 12px;
 }
 
 .episode__wrap {
   width: 778px;
+}
+
+.episode__chapter {
+  display: inline-block;
+  margin-bottom: 48px;
+  padding: 0 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #191919;
+  border-radius: 6px;
+}
+
+.episode__part {
+  margin-bottom: 18px;
+  font-size: 17px;
+  line-height: 1.59;
+  color: #118da8;
+}
+
+.episode__title {
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: 2.56px;
+  color: #fff;
+}
+
+.episode__descr {
+  margin-bottom: 18px;
+}
+
+.about {
+  padding: 100px 0;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 94px;
 }/*# sourceMappingURL=main.css.map */
