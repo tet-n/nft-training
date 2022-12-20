@@ -401,6 +401,11 @@ svg {
   font-weight: 700;
 }
 
+.hero__title--anim {
+  -webkit-animation: top-to-bottom 1000ms ease 200ms;
+          animation: top-to-bottom 1000ms ease 200ms;
+}
+
 .hero__title--line {
   position: relative;
 }
@@ -424,6 +429,37 @@ svg {
   color: #fff;
 }
 
+@-webkit-keyframes top-to-bottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes top-to-bottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .hero__list {
   display: -webkit-box;
   display: -ms-flexbox;
