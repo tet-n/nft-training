@@ -1,0 +1,56 @@
+.episode {
+  display: flex;
+  gap: 53px;
+
+  padding: 40px;
+
+  background-color: getColors('background-secondary');
+
+  border-radius: 12px;
+}
+
+.episode__wrap {
+  width: 778px;
+}
+
+.episode__chapter {
+  display: inline-block;
+  margin-bottom: 48px;
+  padding: 0 16px;
+
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: getColors('primary-text');
+  background-color: getColors('background-main');
+  border-radius: 6px;
+}
+
+.episode__part {
+  margin-bottom: 18px;
+
+  font-size: 17px;
+  line-height: 1.59;
+
+  color: getColors('primary-accent');
+}
+
+.episode__title {
+  margin-bottom: 28px;
+
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.1;
+
+  letter-spacing: 2.56px;
+
+  color: getColors('primary-text');
+}
+
+.episode__descr {
+  margin-bottom: 18px;
+}
+
+.episode__btn {
+  @extend %btn;
+}
