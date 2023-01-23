@@ -1,0 +1,94 @@
+.subscription {
+  padding: 100px 0;
+}
+
+.subscription__container {
+  display: flex;
+  gap: 227px;
+
+  position: relative;
+  padding: 59px 60px 75px 60px;
+
+  background-color: getColors('background-secondary');
+  border-radius: 32px;
+}
+
+.subscription__container::after {
+  content: '';
+  position: absolute;
+  bottom: -26px;
+  left: -38px;
+
+  width: 147px;
+  height: 91px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 147 91'%3E%3Cg fill='%23118DA8' fill-rule='evenodd' clip-path='url(%23a)' clip-rule='evenodd'%3E%3Cpath d='M18.685.219C12.884 2.83 7.122 5.362 1.4 8.142a2.464 2.464 0 0 0-1.154 3.293 2.463 2.463 0 0 0 3.295 1.158c5.692-2.76 11.405-5.272 17.166-7.864a2.48 2.48 0 0 0 1.244-3.264A2.469 2.469 0 0 0 18.685.22ZM61.305 31.11C52.88 49.399 45.38 68.103 37.35 86.56a2.478 2.478 0 0 0 1.273 3.255 2.472 2.472 0 0 0 3.256-1.276c8.01-18.428 15.489-37.103 23.905-55.352a2.478 2.478 0 0 0-1.204-3.284 2.466 2.466 0 0 0-3.275 1.207ZM133.591 35.858c2.694 16.815 5.861 33.58 8.367 50.426a2.476 2.476 0 0 0 2.801 2.076 2.475 2.475 0 0 0 2.082-2.808c-2.516-16.865-5.683-33.65-8.386-50.486a2.465 2.465 0 0 0-2.821-2.047 2.468 2.468 0 0 0-2.043 2.839Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h147v91H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.subscription__wrap {
+  width: 431px;
+}
+
+.subscription__text {
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: getColors('primary-accent');
+}
+
+.subscription__title {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1.1;
+  letter-spacing: 2.88px;
+
+  color: getColors('primary-text');
+}
+
+// .subscription__form {
+//   width: auto;
+// }
+
+.subscription__label {
+  display: block;
+  margin-bottom: 20px;
+  // width: auto;
+}
+
+.subscription__input {
+  width: 552px;
+  box-sizing: border-box;
+  padding: 26px 19px;
+
+  font-size: 24px;
+  line-height: 1.2;
+
+  color: getColors('primary-text');
+
+  background-color: getColors('background-main');
+  border: 1px solid getColors('background-main');
+  border-radius: 6px;
+}
+
+.subscription__input::placeholder {
+  font-size: 24px;
+  line-height: 1.2;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.subscription__btn {
+  display: block;
+
+  padding: 9px 17px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.92;
+  text-align: center;
+
+  color: getColors('primary-text');
+  background-color: #118da8;
+  border-radius: 6px;
+  border: none;
+}

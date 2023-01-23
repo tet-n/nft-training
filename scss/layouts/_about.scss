@@ -4,5 +4,67 @@
 
 .about__container {
   display: flex;
+  justify-content: space-between;
   gap: 94px;
+}
+
+.about__wrap {
+  padding-top: 148px;
+
+  width: 556px;
+}
+
+.about__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background-color: getColors('primary-accent');
+}
+
+.about__thumb::after {
+  content: '';
+  width: 71px;
+  height: 38px;
+  background-image: url(../images/about/arrow_about.png);
+}
+
+.about__intro {
+  font-size: 18px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+
+  color: getColors('primary-accent');
+}
+
+.about__title {
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 1.22;
+  letter-spacing: 2.88px;
+
+  color: getColors('primary-text');
+}
+
+.about__paragraph {
+  margin-bottom: 33px;
+  font-size: 22px;
+  line-height: 1.5;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about__paragraph--mb {
+  margin-bottom: 0;
+}
+
+.about__thumb-img {
+  overflow: hidden;
+
+  border-radius: 12px;
 }
