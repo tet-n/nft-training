@@ -22,6 +22,17 @@
 
   @extend %list;
 }
+
+.footer__socials-icon {
+  stroke: getColors('primary-text');
+  @include transition(stroke);
+}
+
+.footer__socials-icon:hover,
+.footer__socials-icon:focus {
+  stroke: getColors('primary-accent');
+}
+
 .footer__links-list {
   @extend %list;
   width: 179px;
@@ -35,4 +46,10 @@
   line-height: 1.5;
 
   color: getColors('primary-text');
+  @include transition(color);
+}
+
+.footer__links-link:hover,
+.footer__links-link:focus {
+  color: getColors('primary-accent');
 }

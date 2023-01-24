@@ -14,6 +14,10 @@
   padding-top: 294px;
 }
 
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 2s;
+}
+
 .hero__title {
   margin-bottom: 90px;
   width: 526px;
@@ -32,7 +36,7 @@
 
 // Animation title
 .hero__title--anim {
-  animation: top-to-bottom 1000ms ease 200ms;
+  animation: top-to-bottom 2000ms ease 200ms;
 }
 
 .hero__title--line {

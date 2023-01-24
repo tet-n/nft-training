@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -19,17 +24,17 @@
       <!-- navigation -->
       <nav class="site-nav">
         <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="" class="site-nav__link">Home</a></li>
-          <li class="site-nav__item"><a href="" class="site-nav__link">Episodes</a></li>
-          <li class="site-nav__item"><a href="" class="site-nav__link">About</a></li>
-          <li class="site-nav__item"><a href="" class="site-nav__link">Contact</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link">Home</a></li>
+          <li class="site-nav__item"><a href="#episode" class="site-nav__link">Episodes</a></li>
+          <li class="site-nav__item"><a href="#about" class="site-nav__link">About</a></li>
+          <li class="site-nav__item"><a href="#contact" class="site-nav__link">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero container hero__container">
-        <div class="hero__thumb">
+        <div class="hero__thumb animate__animated animate__fadeInLeft">
           <picture class="hero__img">
             <source
               srcset="./images/hero/hero-1x.webp 1x, ./images/hero/hero-2x.webp 2x"
@@ -97,7 +102,7 @@
         </div>
       </section>
       <!-- Episodes -->
-      <section class="episodes container">
+      <section class="episodes container" id="episode">
         <div class="episodes__wrap">
           <h2 class="episodes__title">Latest episodes</h2>
           <button type="button" class="episodes__btn">View all episodes</button>
@@ -105,7 +110,7 @@
 
         <ul class="episodes__list">
           <li class="episodes__item">
-            <article class="episode">
+            <article class="episode" data-aos="fade-left" data-aos-duration="1000">
               <picture class="episode__img">
                 <source
                   srcset="
@@ -140,7 +145,7 @@
               </div>
             </article>
           </li>
-          <li class="episodes__item">
+          <li class="episodes__item" data-aos="fade-right" data-aos-duration="1000">
             <article class="episode">
               <picture class="episode__img">
                 <source
@@ -175,7 +180,7 @@
               </div>
             </article>
           </li>
-          <li class="episodes__item">
+          <li class="episodes__item" data-aos="fade-left" data-aos-duration="1000">
             <article class="episode">
               <picture class="episode__img">
                 <source
@@ -213,7 +218,7 @@
         </ul>
       </section>
       <!-- About -->
-      <section class="about container about__container">
+      <section class="about container about__container" id="about">
         <div class="about__wrap">
           <div class="about__thumb"></div>
           <p class="about__intro">Meet your host</p>
@@ -254,6 +259,28 @@
             </label>
             <button type="submit" class="subscription__btn">Submit</button>
           </form>
+          <svg
+            id="Layer_1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 145.04 89.39"
+            class="subscription__strokes"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #118da8;
+                  stroke-linecap: round;
+                  stroke-miterlimit: 10;
+                  stroke-width: 5px;
+                }
+              </style>
+            </defs>
+            <line class="cls-1" x1="2.5" y1="9.45" x2="17.63" y2="2.5" />
+            <line class="cls-1" x1="37.94" y1="86.89" x2="63.55" y2="29.43" />
+            <line class="cls-1" x1="142.54" y1="86.19" x2="134.89" y2="34.17" />
+          </svg>
         </div>
       </section>
       <!-- Reviews -->
@@ -288,7 +315,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container footer__container">
         <div class="footer__wrap">
           <a href="#" class="footer__logo">
@@ -385,5 +412,7 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/scroll-animation.js" type="module"></script>
   </body>
 </html>
