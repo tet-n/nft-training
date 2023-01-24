@@ -257,11 +257,11 @@ summary {
   src: url("../fonts/dm-sans-v11-latin-700.eot"); /* IE9 Compat Modes */
   src: local(""), url("../fonts/dm-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans-v11-latin-700.woff2") format("woff2"), url("../fonts/dm-sans-v11-latin-700.woff") format("woff"), url("../fonts/dm-sans-v11-latin-700.ttf") format("truetype"), url("../fonts/dm-sans-v11-latin-700.svg#DMSans") format("svg"); /* Legacy iOS */
 }
-.reviews__list, .episodes__list, .hero__list, .site-nav__list {
+.footer__links-list, .footer__socials-list, .reviews__list, .episodes__list, .hero__list, .site-nav__list {
   list-style: none;
 }
 
-.hero__link, .site-nav__link {
+.footer__links-link, .hero__link, .site-nav__link {
   text-decoration: none;
 }
 
@@ -320,7 +320,6 @@ svg {
 .container {
   margin: 0 auto;
   width: 1330px;
-  outline: 1px solid tomato;
 }
 
 .header__container {
@@ -464,6 +463,66 @@ svg {
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
+}
+
+.hero__circle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.hero__circle::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff7602), to(#ff3502));
+  background: linear-gradient(#ff7602, #ff3502);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero__rectngl {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.hero__rectngl::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f452ff), to(#832bc1));
+  background: linear-gradient(#f452ff, #832bc1);
+  border-radius: 10px;
+  z-index: -1;
 }
 
 .episodes {
@@ -672,6 +731,27 @@ svg {
   background-color: #191919;
   border: 1px solid #191919;
   border-radius: 6px;
+  outline: 1px solid transparent;
+  -webkit-transition-property: outline, outline-offset, -webkit-box-shadow;
+  transition-property: outline, outline-offset, -webkit-box-shadow;
+  transition-property: outline, box-shadow, outline-offset;
+  transition-property: outline, box-shadow, outline-offset, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+  -webkit-transition-property: outline, -webkit-box-shadow;
+  transition-property: outline, -webkit-box-shadow;
+  transition-property: outline, box-shadow;
+  transition-property: outline, box-shadow, -webkit-box-shadow;
+  transition-property: outline, box-shadow, outline-offset;
+}
+
+.subscription__input:focus {
+  -webkit-box-shadow: 0 0 10px 4px rgba(1, 208, 255, 0.404);
+          box-shadow: 0 0 10px 4px rgba(1, 208, 255, 0.404);
+  outline-color: #118da8;
+  outline-offset: -2px;
 }
 
 .subscription__input::-webkit-input-placeholder {
@@ -761,4 +841,47 @@ svg {
   font-size: 24px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+  padding: 100px 0;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.footer__wrap {
+  padding-right: 223px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 21px;
+}
+
+.footer__socials-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.footer__links-list {
+  width: 179px;
+}
+
+.footer__links-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__links-link {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

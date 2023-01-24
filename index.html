@@ -69,38 +69,21 @@
             <li class="hero__item">
               <a href="" class="hero__link">
                 <!-- svg from sprite -->
-                <svg class="hero__icon" width="32" height="32">
-                  <use href="./images/icons.svg#cloud"></use>
-                </svg>
+                <div class="hero__circle">
+                  <svg class="hero__icon" width="32" height="32">
+                    <use href="./images/icons.svg#cloud"></use>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="hero__item">
               <a href="" class="hero__link">
                 <!-- Inline svg -->
-                <svg width="32" height="32">
-                  <linearGradient
-                    id="b"
-                    x1="16"
-                    x2="16"
-                    y1="34"
-                    y2="2"
-                    gradientTransform="matrix(1 0 0 -1 0 34)"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#f452ff" />
-                    <stop offset="1" stop-color="#832bc1" />
-                  </linearGradient>
-                  <path
-                    fill="url(#b)"
-                    fill-rule="evenodd"
-                    d="M31.367 27.736c-.311.79-1.029 1.903-2.047 2.686a6.705 6.705 0 0 1-2.253 1.171c-1.027.304-2.292.407-3.867.407H8.8c-1.575 0-2.84-.103-3.868-.407a6.687 6.687 0 0 1-2.253-1.171C1.661 29.638.943 28.526.632 27.736.006 26.144 0 24.338 0 23.2V8.8c0-1.138.006-2.944.633-4.536.311-.79 1.029-1.903 2.047-2.686A6.705 6.705 0 0 1 4.933.407C5.96.103 7.225 0 8.8 0h14.4c1.575 0 2.84.103 3.868.407a6.687 6.687 0 0 1 2.253 1.171c1.018.784 1.736 1.896 2.047 2.686C31.994 5.856 32 7.662 32 8.8v14.4c0 1.137-.006 2.944-.633 4.536z"
-                    clip-rule="evenodd"
-                  />
-                  <path
-                    fill="#fff"
-                    d="M18.321 18.393c-.48-.507-1.324-.831-2.319-.831s-1.839.325-2.319.831c-.25.264-.383.535-.425.922-.081.748-.035 1.391.052 2.421.083.981.242 2.289.449 3.621.147.948.267 1.459.376 1.826.177.594.836 1.113 1.868 1.113 1.031 0 1.691-.519 1.868-1.113.109-.366.228-.878.375-1.826.207-1.332.365-2.64.449-3.621.088-1.029.133-1.673.052-2.421a1.485 1.485 0 0 0-.426-.922zm-4.936-4.511a2.62 2.62 0 1 0 5.24-.001 2.62 2.62 0 0 0-5.24.001zm2.587-10.335c-6.125.017-11.144 4.986-11.22 11.111-.062 4.961 3.106 9.205 7.528 10.761a.15.15 0 0 0 .199-.164 61.402 61.402 0 0 1-.163-1.153.387.387 0 0 0-.228-.305c-3.495-1.527-5.936-5.033-5.897-9.093.051-5.329 4.403-9.673 9.732-9.716 5.448-.044 9.894 4.375 9.894 9.813 0 4.02-2.43 7.483-5.898 8.998a.388.388 0 0 0-.227.305c-.05.38-.105.767-.163 1.152a.15.15 0 0 0 .199.164c4.38-1.541 7.529-5.719 7.529-10.619 0-6.217-5.066-11.272-11.285-11.254zm-.204 5.163a6.106 6.106 0 0 1 6.34 6.094 6.084 6.084 0 0 1-1.927 4.445.463.463 0 0 0-.147.366c.024.419.015.826-.013 1.285a.149.149 0 0 0 .231.132 7.537 7.537 0 0 0 3.296-6.228c0-4.256-3.545-7.699-7.837-7.533-3.989.155-7.189 3.443-7.24 7.435a7.532 7.532 0 0 0 3.296 6.326.148.148 0 0 0 .231-.132c-.028-.46-.036-.867-.013-1.286a.463.463 0 0 0-.147-.366 6.085 6.085 0 0 1-1.926-4.609c.085-3.195 2.662-5.806 5.856-5.929z"
-                  />
-                </svg>
+                <div class="hero__rectngl">
+                  <svg class="hero__icon" width="32" height="32">
+                    <use href="./images/icons.svg#info"></use>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="hero__item">
@@ -305,5 +288,102 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrap">
+          <a href="#" class="footer__logo">
+            <svg class="" width="223" height="46">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__socials-list">
+            <li class="footer__socials-item">
+              <a href="#" class="footer__socials-link"
+                ><svg class="footer__socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a href="#" class="footer__socials-link"
+                ><svg class="footer__socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twit"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a href="#" class="footer__socials-link"
+                ><svg class="footer__socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__links-list">
+          <li class="footer__links-item"><a href="#" class="footer__links-link">Home</a></li>
+          <li class="footer__links-item"><a href="#" class="footer__links-link">About</a></li>
+          <li class="footer__links-item"><a href="#" class="footer__links-link">Episodes</a></li>
+          <li class="footer__links-item"><a href="#" class="footer__links-link">Contact</a></li>
+        </ul>
+        <ul class="footer__links-list">
+          <li class="footer__links-item"><a href="#" class="footer__links-link">Style Guide</a></li>
+          <li class="footer__links-item">
+            <a href="#" class="footer__links-link">Instructions</a>
+          </li>
+          <li class="footer__links-item"><a href="#" class="footer__links-link">Changelog</a></li>
+          <li class="footer__links-item"><a href="#" class="footer__links-link">Credit</a></li>
+          <li class="footer__links-item">
+            <a href="#" class="footer__links-link">Powered by Webflow</a>
+          </li>
+          <li class="footer__links-item"><a href="#" class="footer__links-link">Licenses</a></li>
+        </ul>
+        <!-- links -->
+        <!-- links -->
+        <ul class="hero__list">
+          <li class="hero__item">
+            <a href="hero__icon" class="hero__link"
+              ><svg class="" width="32" height="32">
+                <use href="./images/icons.svg#wifi"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hero__item">
+            <a href="" class="hero__link"
+              ><svg class="hero__icon" width="32" height="32">
+                <use href="./images/icons.svg#copy"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hero__item">
+            <a href="" class="hero__link">
+              <!-- svg from sprite -->
+              <div class="hero__circle">
+                <svg class="hero__icon" width="32" height="32">
+                  <use href="./images/icons.svg#cloud"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="hero__item">
+            <a href="" class="hero__link">
+              <!-- Inline svg -->
+              <div class="hero__rectngl">
+                <svg class="hero__icon" width="32" height="32">
+                  <use href="./images/icons.svg#info"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="hero__item">
+            <a href="" class="hero__link"
+              ><svg class="hero__icon" width="32" height="32">
+                <use href="./images/icons.svg#radio"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

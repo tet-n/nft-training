@@ -67,6 +67,13 @@
   background-color: getColors('background-main');
   border: 1px solid getColors('background-main');
   border-radius: 6px;
+  outline: 1px solid transparent;
+  @include transition(outline, box-shadow, outline-offset);
+}
+.subscription__input:focus {
+  box-shadow: 0 0 10px 4px rgba(1, 208, 255, 0.404);
+  outline-color: #118da8;
+  outline-offset: -2px;
 }
 
 .subscription__input::placeholder {
